@@ -10,10 +10,9 @@ pd.options.mode.chained_assignment = None
 
 from twilio.rest import Client
 
-#TWILIO RECOVERY CODE: HGsANwLeS8rLqJ40PZ4eZNhGeZje87NYOV8HXO2h
 
-ACCOUNT_SID = 'AC2ffefe8e63a36be0e693ade9eb5b5626'
-AUTH_TOKEN = '2f987bc0a98c887b3a98079e312968d8'
+ACCOUNT_SID = 'ACCOUNT_SID'
+AUTH_TOKEN = 'AUTH_TOKEN'
 
 client = Client(ACCOUNT_SID, AUTH_TOKEN)
 
@@ -26,15 +25,15 @@ def SMS(ticker, action):
     if (action == 'BUY'):
         expiry = contract(ticker)
         client.messages.create(
-            to='+16048383281',
-            from_='+12525926423',
+            to='PHONENUMBER',
+            from_='TWILIOPHONENUMBER',
             body= action + ' ' + expiry + ' ' + ticker
         )
         print(action + ' ' + expiry + ' ' + ticker)
     else:
         client.messages.create(
-            to='+16048383281',
-            from_='+12525926423',
+            to='PHONENUMBER',
+            from_='TWILIOPHONENUMBER',
             body= action + ' ' + ticker
         )
         print(action + ' ' + ticker)
