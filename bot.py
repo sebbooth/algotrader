@@ -194,7 +194,7 @@ def checkForSells(data):
 """
 
 
-tickers = ['MMM', 'CSCO', 'IBM', 'MCD', 'GOOGL', 'EA', 'FB', 'GILD', 'ILMN', 'NFLX', 'SBUX', 'DHR', 'NEE', 'ABC', 'BAX', 'BDX', 'AVGO', 'DRE', 'EXR', 'FTNT', 'GRMN', 'GIS', 'HCA', 'HPQ', 'IDXX']
+tickers = ['MMM', 'CSCO', 'IBM', 'MCD', 'GOOGL', 'EA', 'GILD', 'ILMN', 'NFLX', 'SBUX', 'DHR', 'NEE', 'ABC', 'BAX', 'BDX', 'AVGO', 'EXR', 'FTNT', 'GRMN', 'GIS', 'HCA', 'HPQ', 'IDXX']
 #tickers = ['AAPL', 'PZZA', 'SNAP', 'IWM', 'FB', 'AA', 'MGM', 'F']
 portfolio = portfolio()
 
